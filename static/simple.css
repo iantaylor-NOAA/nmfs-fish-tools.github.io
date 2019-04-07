@@ -118,17 +118,21 @@ border: none;
   display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
 .box{
-  width: 165px;
-  height: 165px;
-  border: 1px dotted black;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+
+  /*border-width: 0 1px 0 1px;*/
   margin-left:40px;
   margin-bottom: 40px;
-  color: black;  padding:5px 2px 5px 2px;
+  color: black;
   display: flex;
   flex-direction: column;
   font-family: sans-serif;
+
 
 
 }
@@ -137,12 +141,20 @@ border: none;
 .shortTitle{
   font-weight: bold;
   text-align: center;
+  line-height: 30px;
+  color: black;
+  background-color:#3F51B5;
+
 
 }
 .longTitle{
   font-style: italic;
   text-align: center;
-padding-bottom: 3px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #3F51B5;
 }
 
 
@@ -150,6 +162,8 @@ padding-bottom: 3px;
 .language{
   color: rgb(26, 138, 45);
   font-weight:bold;
+    padding-right: 5px;
+  padding-left: 5px;
 
 }
 .iconrow{
@@ -157,16 +171,52 @@ display: flex;
 flex-direction: row;
 justify-content: stretch;
 margin-top:auto;
+background-color: #3F51B5;;
 }
 
 .icon_small{
-  width:20px;
-  height: 20px;
-  background-color: black;
+  width:  25px;
+  height: 25px;
+  background-color: white;
   margin:0 auto 0 auto;
+  border: 1px solid black
 }
 
+button:disabled,
+button[disabled]{
 
+  background-color: grey;
+
+}
+
+#online{
+  background-image: url("icons8-tune-24.png");
+  background-repeat: none;
+  background-size: cover;
+}
+
+#github{
+  background-image: url("icons8-github-24.png");
+  background-repeat: none;
+  background-size: cover;
+}
+
+#down{
+  background-image: url("icons8-lightning-bolt-filled-50.png");
+  background-repeat: none;
+  background-size: cover;
+}
+
+#cert{
+  background-image: url("icons8-approval-filled-50.png");
+  background-repeat: none;
+  background-size: cover;
+}
+#checkmark{
+  background-image: url("icons8-checkmark-24.png");
+  background-repeat: none;
+  background-size: cover;
+}
 .versionButton{
 
 width: 97px;
@@ -216,6 +266,13 @@ padding: 20px;
 border-style: dashed;
 border-color:  #3F51B5 ;
 border-width: 2px 0 2px 0;
+
+}
+
+.filtering{
+      /*background-color: #3F51B5;*/
+      width: auto;
+      height: 50px;
 }
 
 .ref {
@@ -260,4 +317,10 @@ li {
   padding: 5px;
   line-height: 40px;
   font-size: 24px;
+}
+
+.modelType{
+  font-size: 14px;
+    padding-right: 5px;
+  padding-left: 5px;
 }
