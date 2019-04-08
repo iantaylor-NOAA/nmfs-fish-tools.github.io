@@ -28,7 +28,7 @@
 
     color: #3F51B5;
     font-family: 'Serif';
-    font-size: 29px;
+    font-size: 36px;
     text-align: left;
     padding: 5px;
 }
@@ -142,8 +142,8 @@ border: none;
   font-weight: bold;
   text-align: center;
   line-height: 30px;
-  color: black;
-  background-color:#3f51b5a3;
+  color: white;
+  background-color:#3f51b5;
 
 
 }
@@ -171,7 +171,7 @@ display: flex;
 flex-direction: row;
 justify-content: stretch;
 margin-top:auto;
-background-color: #3f51b5a3;
+background-color: #3f51b5;
 }
 
 .icon_small{
