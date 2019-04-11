@@ -4,10 +4,21 @@
     <title></title>
    <link type="text/css" rel="stylesheet" href="./static/simple.css" />
 
-
-</style>
 </head>
+
+
 <body>
+<script type="text/javascript">
+
+  var toolTypes =['stock assessment model','reporting','model builder','analytical tool','solver']
+function searchType(){
+  // var longTitleNames = document.getElementsByClassName("longTitle");
+  var searchItem = document.getElementById("search");
+  console.log(longTitleNames)
+
+}
+
+</script>
     <div class="container">
         <div class="mywrap">
             <div class ="title">
@@ -34,11 +45,62 @@
 
 
         </div>
-         <div class ="filtering"></div>
+         <div class ="filtering">
+           <!-- <input class="search" placeholder="Search" onkeyup="searchType()"/> -->
+          <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
+            <!-- <button class="sort" onclick="sortByType()">
+              Sort by Type
+            </button> -->
+           <!--  <button class = "icon_small"  id ="online"></button>
+            <button class = "icon_small"  id ="down"></button>
+            <button class = "icon_small"  id ="github"></button>
+            <button class = "icon_small"  id ="cert"></button>
+            -->
+             <!-- <button class = "icon_small"  id ="checkmark"></button> -->
+            <!-- <button class = "icon_small_grey"  id ="down" aria-pressed="false" ></button> -->
+
+            <div class="tabs">
+
+                <input name="tabs" id="tabs-1" type="radio" checked="checked" class="input"/>
+                <label for="tabs-1" class="label"> <img id="online" height="25px" width="25px"></label>
+                <div class="panel">
+                  <h2>Web Application</h2>
+
+                </div>
+
+                <input name="tabs" id="tabs-2" type="radio" checked="checked" class="input"/>
+                <label for="tabs-2" class="label"> <img id="down" height="25px" width="25px"></label>
+                <div class="panel">
+                  <h2>Executable</h2>
+
+                </div>
+
+               <input name="tabs" id="tabs-3" type="radio" checked="checked" class="input"/>
+                <label for="tabs-3" class="label"> <img id="github" height="25px" width="25px"></label>
+                <div class="panel">
+                  <h2>Code Repository</h2>
+
+                </div>
+                 <input name="tabs" id="tabs-4" type="radio" checked="checked" class="input"/>
+                <label for="tabs-4" class="label"> <img id="cert" height="25px" width="25px"></label>
+                <div class="panel">
+                  <h2>Validation</h2>
+
+                </div>
+                 <input name="tabs" id="tabs-5" type="radio" checked="checked" class="input"/>
+                <label for="tabs-5" class="label"> <img id="checkmark" height="25px" width="25px"></label>
+                <div class="panel">
+                  <h2>Support Level</h2>
+
+                </div>
+              </div>
+
+
+         </div>
         <div class ="boxcontainer">
 
 
-          <div class = "box">
+          <div class = "box" data-tool-type = "stock" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/2BOX target= "_blank"> 2BOX </a>
               <div class = "longTitle">Dual Zone Virtual Population Analysis</div>
@@ -70,7 +132,7 @@
 
           </div>
 
-          <div class = "box">
+          <div class = "box" data-tool-type = "stock" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/AGEPRO target= "_blank"> AGEPRO </a>
               <div class = "longTitle">Age Structured Projection Model</div>
@@ -102,7 +164,7 @@
 
           </div>
 
-          <div class = "box">
+          <div class = "box" data-tool-type = "stock" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/AIM target= "_blank"> AIM </a>
               <div class = "longTitle">An Index Method</div>
@@ -134,7 +196,7 @@
 
           </div>
 
-          <div class = "box">
+          <div class = "box" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/ASAP target= "_blank"> ASAP </a>
               <div class = "longTitle">Age Structured Assessment Program</div>
@@ -166,7 +228,7 @@
 
           </div>
 
-          <div class = "box">
+          <div class = "box" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/ASPIC target= "_blank"> ASPIC </a>
               <div class = "longTitle">A Stock Production Model Incorporating Covariates</div>
@@ -198,7 +260,7 @@
 
           </div>
 
-          <div class = "box">
+          <div class = "box" data-tool-type = "model_builder" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/ATL target= "_blank"> ATL </a>
               <div class = "longTitle">Analytics Template Library</div>
@@ -230,7 +292,7 @@
 
           </div>
 
-          <div class = "box">
+          <div class = "box" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/CSA target= "_blank"> CSA </a>
               <div class = "longTitle">Collie-Sissenwine Analysis</div>
@@ -262,7 +324,7 @@
 
           </div>
 
-          <div class = "box">
+          <div class = "box" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/DCAC target= "_blank"> DCAC </a>
               <div class = "longTitle">Depletion-Corrected Average Catch</div>
@@ -294,7 +356,7 @@
 
           </div>
 
-          <div class = "box">
+          <div class = "box" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/IRATE target= "_blank"> IRATE </a>
               <div class = "longTitle">Instantaneous Rates</div>
@@ -326,7 +388,7 @@
 
           </div>
 
-          <div class = "box">
+          <div class = "box" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/KALMAN target= "_blank"> KALMAN </a>
               <div class = "longTitle">Kalman Filter</div>
@@ -358,7 +420,7 @@
 
           </div>
 
-          <div class = "box">
+          <div class = "box" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/MCOMP target= "_blank"> MCOMP </a>
               <div class = "longTitle">Model Compare Utility</div>
@@ -390,7 +452,7 @@
 
           </div>
 
-          <div class = "box">
+          <div class = "box" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/MSE target= "_blank"> MSE </a>
               <div class = "longTitle">Management Strategy Evaluation</div>
@@ -422,7 +484,7 @@
 
           </div>
 
-          <div class = "box">
+          <div class = "box" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/POPSIM-A target= "_blank"> POPSIM-A </a>
               <div class = "longTitle">Age Population Simulator</div>
@@ -454,7 +516,7 @@
 
           </div>
 
-          <div class = "box">
+          <div class = "box" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/POPSIM-L target= "_blank"> POPSIM-L </a>
               <div class = "longTitle">Length Population Simulator</div>
@@ -486,7 +548,7 @@
 
           </div>
 
-          <div class = "box">
+          <div class = "box" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/POPSIM target= "_blank"> POPSIM </a>
               <div class = "longTitle">Population Simulator</div>
@@ -518,7 +580,7 @@
 
           </div>
 
-          <div class = "box">
+          <div class = "box" data-exe = "T" data-gui ="F">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/PSA target= "_blank"> PSA </a>
               <div class = "longTitle">Productivity and Susceptibility Analysis</div>
