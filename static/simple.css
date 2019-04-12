@@ -89,6 +89,15 @@ font-weight: bold;
 font-style: normal;
 text-decoration: none;
 text-align: left;
+padding:5px;
+background: white;
+cursor:pointer;
+background-size:contain;
+background-repeat:no-repeat;
+display:inline-block;
+border:1px solid #3F51B5;
+border-bottom: 3px solid white;
+margin: 0 0 -3px;
 }
 
 .pdfIcon{
@@ -282,6 +291,7 @@ border-width: 2px 0 2px 0;
       /*background-color: #3F51B5;*/
       width: auto;
       height: 200px;
+      margin-top: 20px;
 }
 
 .ref {
@@ -338,21 +348,7 @@ li {
   background-color: grey;
 }
 
-[aria-pressed] {
-  position: relative;
 
-  top: -0.25rem;
-  left: -0.25rem;
-  box-shadow: 0.125em 0.125em 0 #fff,
-              0.25em 0.25em #000;
-}
-
-
-[aria-pressed="true"] {
-
-  box-shadow: -0.125em -0.125em 0 #fff,
-              -0.25em -0.25em #000;
-}
 
 .input {
   position: absolute;
@@ -360,40 +356,22 @@ li {
 }
 
 
-
-.label {
-    background-color:#3F51B5;
-cursor:pointer;
-    background-size:contain;
-    background-repeat:no-repeat;
-    display:inline-block;
-    /*width:100px;height:70px;*/
-  /*  -webkit-transition: all 100ms ease-in;
-       -moz-transition: all 100ms ease-in;
-            transition: all 100ms ease-in;
-    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
-       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
-            filter: brightness(1.8) grayscale(1) opacity(.7);*/
-
-
-}
-
 .label:hover {
   background: #d8d8d8;
 }
 
-.label:active {
-  background: white;
-}
+
 
 .input:focus + .label {
-  /*box-shadow: inset 0px 0px 0px 3px #3F51B5;*/
   z-index: 1;
 }
 
 .input:checked + .label {
   background-color: white;
   color: #000;
+  border: 3px solid #3F51B5;
+  border-bottom: 3px solid white;
+  z-index: 1;
 
 }
 
@@ -408,7 +386,7 @@ cursor:pointer;
     /*padding: 30px 30px 30px;*/
     /*margin: 0px 0px 0 0px;*/
     background: #fff;
-    border:1px solid #3F51B5;
+    border: 3px solid #3F51B5;
     width:100%;
     height: 100px;
 
@@ -420,6 +398,7 @@ cursor:pointer;
     order: 99;
   }
 }
+
 
 .input:checked + .label + .panel {
   display: block;
@@ -436,4 +415,6 @@ img{
   pointer-events: none;
 
 
+
 }
+
