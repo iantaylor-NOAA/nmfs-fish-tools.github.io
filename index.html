@@ -31,21 +31,54 @@ function searchType(){
         </div>
         <div class = "divider">
       </div>
-      <div class="mywrap_end">
-
-              <!-- <div class = "icon"> -->
-              <!-- <img class = "icon" src="./static/ladybug.png" alt='qqq'> -->
-            <!-- </div> -->
-
-        </div>
-
         <div class ="infoText">
           The NOAA Fish and Fisheries Toolbox  (Fish-Tools) is a collection of software programs and modeling tools which can be used in fishery stock assessments.  Many of the models are used in peer-reviewed stock assessments in the U.S. and globally.  A variety of fisheries stock assessment models as well as analytical and reporting tools are available, each of which uses a different type of estimation method to produce results.   The NOAA Fish and Fisheries Toolbox (Fish-Tools) is part of the NOAA Fisheries Integrate Toolbox (FIT).
 
 
 
         </div>
-         <div class ="filtering">
+                       <div class="boxcontainer">
+                  <div class = "box2">
+                <div class ="row"><img id="online" height="25px" width="25px"><h2>Web Application</h2></div>
+                Some tools are available as web based applications.
+
+
+
+                </div>
+                <div class = "box2">
+                <div class ="row"><img id="down" height="25px" width="25px"><h2> Executable</h2></div>
+
+                  Tools packaged as executables are available for download.
+
+
+                </div>
+                <div class = "box2">
+                <div class ="row"><img id="github" height="25px" width="25px"><h2> Code Repository</h2></div>
+
+                   Github repositories associated to the tool are available for developers or users to access. Interested devleopers can make pull requests on the code base.
+
+
+
+                </div>
+                <div class = "box2">
+                <div class ="row"><img id="cert" height="25px" width="25px"> <h2>Validation</h2></div>
+                  Tools and code go through a validation process and areassigned different levels of validation.
+
+
+
+                </div>
+                <div class = "box2">
+                <div class ="row"><img id="checkmark" height="25px" width="25px"> <h2>Support Level</h2></div>
+                  Tools are supported by NOAA support staff at differeing levels depending on the owner of the repository and tools validation level
+
+
+                </div>
+
+
+
+
+              </div>
+         <!-- <div class ="filtering"> -->
            <!-- <input class="search" placeholder="Search" onkeyup="searchType()"/> -->
           <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
             <!-- <button class="sort" onclick="sortByType()">
@@ -59,48 +92,10 @@ function searchType(){
              <!-- <button class = "icon_small"  id ="checkmark"></button> -->
             <!-- <button class = "icon_small_grey"  id ="down" aria-pressed="false" ></button> -->
 
-            <div class="tabs">
-
-                <input name="tabs" id="tabs-1" type="radio" checked = "checked" class="input" />
-                <label for="tabs-1" class="label"> <img id="online" height="25px" width="25px"></label>
-                <div class="panel">
-                  <h2>Web Application</h2>
-
-                </div>
-
-                <input name="tabs" id="tabs-2" type="radio"  class="input"/>
-                <label for="tabs-2" class="label"> <img id="down" height="25px" width="25px"></label>
-                <div class="panel">
-                  <h2>Executable</h2>
-                  Tools packaged as executables are available for download.
-
-                </div>
-
-               <input name="tabs" id="tabs-3" type="radio" class="input"/>
-                <label for="tabs-3" class="label"> <img id="github" height="25px" width="25px"></label>
-                <div class="panel">
-                  <h2>Code Repository</h2>
-                  Github repositories associated to the tool are available for developers or users to access. Interested devleopers can make pull requests on the code base.
-
-                </div>
-                 <input name="tabs" id="tabs-4" type="radio"  class="input"/>
-                <label for="tabs-4" class="label"> <img id="cert" height="25px" width="25px"></label>
-                <div class="panel">
-                  <h2>Validation</h2>
-                  Tools and code go through a validation process and areassigned different levels of validation.
-
-                </div>
-                 <input name="tabs" id="tabs-5" type="radio" class="input"/>
-                <label for="tabs-5" class="label"> <img id="checkmark" height="25px" width="25px"></label>
-                <div class="panel">
-                  <h2>Support Level</h2>
-                  Tools are supported by NOAA support staff at differeing levels depending on the owner of the repository and tools validation level
-
-                </div>
-              </div>
 
 
-         </div>
+
+         <!-- </div> -->
         <div class ="boxcontainer">
 
 
@@ -913,7 +908,9 @@ function searchType(){
 
 
 
-
+        <div class = "divider">
+        </div>
+        <div></div>
       </div>
    </body>
 </html>

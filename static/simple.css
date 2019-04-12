@@ -122,12 +122,13 @@ border: none;
 }
 
 .boxcontainer{
-  padding: 40px;
+  padding: 40px 40px 0 40px;
   display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
 }
+.box2,
 .box{
   width: 200px;
   height: 200px;
@@ -141,10 +142,20 @@ border: none;
   flex-direction: column;
   font-family: sans-serif;
 
-
-
 }
 
+.box2{
+  width:200px;
+   height: 175px;
+   font-size:14px;
+   border:none;
+   border-top: 1px solid black;
+}
+
+h2{
+  font-size:16px;
+  padding-left: 2px;
+}
 
 .shortTitle{
   font-weight: bold;
@@ -172,6 +183,14 @@ border: none;
   font-weight:bold;
     padding-right: 5px;
   padding-left: 5px;
+
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
 
 }
 .iconrow{
@@ -275,15 +294,15 @@ text-align: left;
 .infoText {
 
 width: auto;
-height: 204px;
+height: auto;
 color: #000000;
 font-family: 'Source Sans Pro';
 font-size: 16px;
 text-align: left;
-padding: 20px;
+padding: 20px 40px 20px 40px;
 border-style: dashed;
 border-color:  #3F51B5 ;
-border-width: 2px 0 2px 0;
+border-width: 0 0 2px 0;
 
 }
 
