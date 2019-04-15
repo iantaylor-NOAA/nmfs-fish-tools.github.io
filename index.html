@@ -4,102 +4,67 @@
     <title></title>
    <link type="text/css" rel="stylesheet" href="./static/simple.css" />
 
+
+</style>
 </head>
-
-
 <body>
-<script type="text/javascript">
-
-  var toolTypes =['stock assessment model','reporting','model builder','analytical tool','solver']
-function searchType(){
-  // var longTitleNames = document.getElementsByClassName("longTitle");
-  var searchItem = document.getElementById("search");
-  console.log(longTitleNames)
-
-}
-
-</script>
     <div class="container">
         <div class="mywrap">
-            <div class ="title">
-              Fish and Fisheries Tools
-
-
-            </div>
-
-
+            <div class ="title">Fish and Fisheries Tools</div>
         </div>
-        <div class = "divider">
-      </div>
+        <div class = "divider"></div>
         <div class ="infoText">
           The NOAA Fish and Fisheries Toolbox  (Fish-Tools) is a collection of software programs and modeling tools which can be used in fishery stock assessments.  Many of the models are used in peer-reviewed stock assessments in the U.S. and globally.  A variety of fisheries stock assessment models as well as analytical and reporting tools are available, each of which uses a different type of estimation method to produce results.   The NOAA Fish and Fisheries Toolbox (Fish-Tools) is part of the NOAA Fisheries Integrate Toolbox (FIT).
 
 
 
         </div>
-                       <div class="boxcontainer">
-                  <div class = "box2">
-                <div class ="row"><img id="online" height="25px" width="25px"><h2>Web Application</h2></div>
+        <div class="boxcontainer">
+            <div class = "box2">
+              <div class ="row"><img id="online" height="25px" width="25px"><h2>Web Application</h2></div>
                 Some tools are available as web based applications.
 
 
 
-                </div>
-                <div class = "box2">
-                <div class ="row"><img id="down" height="25px" width="25px"><h2> Executable</h2></div>
+              </div>
+            <div class = "box2">
+              <div class ="row"><img id="down" height="25px" width="25px"><h2> Executable</h2></div>
 
                   Tools packaged as executables are available for download.
 
 
-                </div>
-                <div class = "box2">
-                <div class ="row"><img id="github" height="25px" width="25px"><h2> Code Repository</h2></div>
+            </div>
+            <div class = "box2">
+              <div class ="row"><img id="github" height="25px" width="25px"><h2> Code Repository</h2></div>
 
                    Github repositories associated to the tool are available for developers or users to access. Interested devleopers can make pull requests on the code base.
 
 
 
-                </div>
-                <div class = "box2">
-                <div class ="row"><img id="cert" height="25px" width="25px"> <h2>Validation</h2></div>
+            </div>
+            <div class = "box2">
+              <div class ="row"><img id="cert" height="25px" width="25px"> <h2>Validation</h2></div>
                   Tools and code go through a validation process and areassigned different levels of validation.
 
 
 
-                </div>
-                <div class = "box2">
-                <div class ="row"><img id="checkmark" height="25px" width="25px"> <h2>Support Level</h2></div>
+            </div>
+            <div class = "box2">
+              <div class ="row"><img id="checkmark" height="25px" width="25px"> <h2>Support Level</h2></div>
                   Tools are supported by NOAA support staff at differeing levels depending on the owner of the repository and tools validation level
 
 
-                </div>
+            </div>
 
 
 
 
-              </div>
-         <!-- <div class ="filtering"> -->
-           <!-- <input class="search" placeholder="Search" onkeyup="searchType()"/> -->
-          <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
-            <!-- <button class="sort" onclick="sortByType()">
-              Sort by Type
-            </button> -->
-           <!--  <button class = "icon_small"  id ="online"></button>
-            <button class = "icon_small"  id ="down"></button>
-            <button class = "icon_small"  id ="github"></button>
-            <button class = "icon_small"  id ="cert"></button>
-            -->
-             <!-- <button class = "icon_small"  id ="checkmark"></button> -->
-            <!-- <button class = "icon_small_grey"  id ="down" aria-pressed="false" ></button> -->
-
-
-
-
-         <!-- </div> -->
+            </div>
+        <!-- <div class ="filtering"></div> -->
         <div class ="boxcontainer">
 
 
-          <div class = "box" data-tool-type = "stock" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/2BOX target= "_blank"> 2BOX </a>
               <div class = "longTitle">Dual Zone Virtual Population Analysis</div>
@@ -122,16 +87,17 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
 
           </div>
 
-          <div class = "box" data-tool-type = "stock" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/AGEPRO target= "_blank"> AGEPRO </a>
               <div class = "longTitle">Age Structured Projection Model</div>
@@ -154,16 +120,17 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
 
           </div>
 
-          <div class = "box" data-tool-type = "stock" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/AIM target= "_blank"> AIM </a>
               <div class = "longTitle">An Index Method</div>
@@ -186,16 +153,17 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
 
           </div>
 
-          <div class = "box" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/ASAP target= "_blank"> ASAP </a>
               <div class = "longTitle">Age Structured Assessment Program</div>
@@ -218,16 +186,17 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
 
           </div>
 
-          <div class = "box" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/ASPIC target= "_blank"> ASPIC </a>
               <div class = "longTitle">A Stock Production Model Incorporating Covariates</div>
@@ -250,16 +219,17 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
 
           </div>
 
-          <div class = "box" data-tool-type = "model_builder" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/ATL target= "_blank"> ATL </a>
               <div class = "longTitle">Analytics Template Library</div>
@@ -282,16 +252,16 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
+
                   <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
 
               </div>
 
 
           </div>
 
-          <div class = "box" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/CSA target= "_blank"> CSA </a>
               <div class = "longTitle">Collie-Sissenwine Analysis</div>
@@ -314,16 +284,17 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
 
           </div>
 
-          <div class = "box" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/DCAC target= "_blank"> DCAC </a>
               <div class = "longTitle">Depletion-Corrected Average Catch</div>
@@ -346,16 +317,17 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
 
           </div>
 
-          <div class = "box" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/IRATE target= "_blank"> IRATE </a>
               <div class = "longTitle">Instantaneous Rates</div>
@@ -378,16 +350,17 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
 
           </div>
 
-          <div class = "box" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/KALMAN target= "_blank"> KALMAN </a>
               <div class = "longTitle">Kalman Filter</div>
@@ -410,16 +383,17 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
 
           </div>
 
-          <div class = "box" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/MCOMP target= "_blank"> MCOMP </a>
               <div class = "longTitle">Model Compare Utility</div>
@@ -442,16 +416,17 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
 
           </div>
 
-          <div class = "box" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/MSE target= "_blank"> MSE </a>
               <div class = "longTitle">Management Strategy Evaluation</div>
@@ -474,16 +449,16 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
+
                   <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
 
               </div>
 
 
           </div>
 
-          <div class = "box" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/POPSIM-A target= "_blank"> POPSIM-A </a>
               <div class = "longTitle">Age Population Simulator</div>
@@ -506,16 +481,17 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
 
           </div>
 
-          <div class = "box" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/POPSIM-L target= "_blank"> POPSIM-L </a>
               <div class = "longTitle">Length Population Simulator</div>
@@ -538,16 +514,17 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
 
           </div>
 
-          <div class = "box" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/POPSIM target= "_blank"> POPSIM </a>
               <div class = "longTitle">Population Simulator</div>
@@ -570,16 +547,17 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
 
           </div>
 
-          <div class = "box" data-exe = "T" data-gui ="F">
+          <div class = "box">
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/PSA target= "_blank"> PSA </a>
               <div class = "longTitle">Productivity and Susceptibility Analysis</div>
@@ -602,9 +580,10 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
@@ -634,9 +613,10 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
@@ -666,9 +646,10 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
@@ -698,9 +679,10 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
@@ -730,15 +712,47 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
 
           </div>
 
+          <div class = "box">
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/SS target= "_blank"> SS </a>
+              <div class = "longTitle">Stock Synthesis</div>
+              <div class = "modelType"></div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="down" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                  <button class = "icon_small" id ="checkmark" disabled></button>
+
+
+              </div>
+
+
+          </div>
 
           <div class = "box">
 
@@ -763,9 +777,10 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
@@ -795,9 +810,10 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
@@ -827,9 +843,9 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
+
                   <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
 
               </div>
 
@@ -859,9 +875,10 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
@@ -891,9 +908,10 @@ function searchType(){
                <!--   -->
                   <button class = "icon_small" id ="cert" disabled></button>
                 <!--  -->
-                <!--  -->
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                <!--  -->
+
+                 <button class = "icon_small"  id ="checkmark"  ></button>
+
+
 
               </div>
 
@@ -908,9 +926,14 @@ function searchType(){
 
 
 
-        <div class = "divider">
-        </div>
-        <div></div>
+        <div class = "divider"></div>
+
+        <footer>
+          <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
+    <a class ="mylink" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+    <a class ="mylink" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+
+  </footer>
       </div>
    </body>
 </html>
