@@ -10,11 +10,11 @@
 <body>
     <div class="container">
         <div class="mywrap">
-            <div class ="title"> {{org_config.general_title}}</div>
+            <div class ="title"> Fish and Fisheries Tools</div>
         </div>
         <div class = "divider"></div>
         <div class ="infoText">
-          {{org_config.general_info_text}}
+          The NOAA Fish and Fisheries Toolbox (Fish-Tools) is a collection of software programs and modeling tools which can be used in fishery stock assessments. Many of the models are used in peer-reviewed stock assessments in the U.S. and globally. A variety of fisheries stock assessment models as well as analytical and reporting tools are available, each of which uses a different type of estimation method to produce results. The NOAA Fish and Fisheries Toolbox (Fish-Tools) is part of the <a class ='mylink' href ='https://noaa-fisheries-integrated-toolbox.github.io/'>NOAA Fisheries Integrate Toolbox (FIT)</a>.
         </div>
         <div class="boxcontainer">
             <div class = "box2">
@@ -60,63 +60,1086 @@
         <!-- <div class ="filtering"></div> -->
         <div class ="boxcontainer">
 
-          {% for key, value in configs.items() %}
+
           <div class = "box">
-              {% if value['model_link_page'] is defined and value['model_link_page'] %}
-              {% set my_string = value['model_link_page'] %}
-              {% else %}
-              {% set my_string = org_config.githubpage   ~ value['model_abbrev']  %}
-              {% endif %}
-              <a class = "shortTitle" href= {{my_string}} target= "_blank"> {{value['model_abbrev']}} </a>
-              <div class = "longTitle">{{value['model_name']}}</div>
-              <div class = "modelType">{{value['tool_type']}}</div>
-              <div class = "modelType">{{value['model_type']}}</div>
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/2BOX target= "_blank"> 2BOX </a>
+              <div class = "longTitle">Dual Zone Virtual Population Analysis</div>
+              <div class = "modelType">stock assesment model</div>
+              <div class = "modelType"></div>
               <div class = "language"></div>
               <div class = "iconrow">
-                {% if value['online_app_link'] is defined and value['online_app_link']|length %}
-                 <button class = "icon_small"  id ="online" onclick="location.href= '{{value.online_app_link}}';" value="Go to online app" ></button>
-                 {% else %}
+
                  <button class = "icon_small" id ="online" disabled></button>
-                {% endif %}
 
-                {% if value['download_app_link'] is defined and value['download_app_link']|length %}
-                 <button class = "icon_small"  id ="down" onclick="location.href='{{value.download_app_link}}';" value="download app" ></button>
-                 {% else %}
-                  <button class = "icon_small" id ="down" disabled></button>
-                {% endif %}
 
-                {% if value['github_link'] is defined and value['github_link']|length %}
-                 <button class = "icon_small"  id ="github" onclick="location.href='{{value.github_link}}';" value="Go to online app" ></button>
-                 {% else %}
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/2BOX305.zip';" value="download app" ></button>
+
+
+
                   <button class = "icon_small" id ="github" disabled></button>
-                {% endif %}
 
-               <!--  {% if value['online_app_link']|length %}
-                 <button class = "icon_small"  id ="" onclick="location.href=""{{value['online_app_link']}};" value="Go to online app" ></button>
-                 -->
-                  <!-- {% else %} -->
-                  {% if badge_level %}
-                <button class = "icon_small" id = {{badge_level}}></button>
 
-                {% else %}
+               <!--   -->
+
                 <button class = "icon_small" id ="cert" disabled></button>
 
-                {% endif %}
+
 
                   <button class = "icon_small" id ="cert" disabled></button>
-                <!-- {% endif %} -->
-                {% if value['support_level'] is defined and value['support_level']|length %}
-                 <button class = "icon_small"  id ={{value.support_level}}  ></button>
+                <!--  -->
 
-                 {% else %}
-                  <button class = "icon_small" id ="checkmark" disabled></button>
-                {% endif %}
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
 
               </div>
 
 
           </div>
-          {% endfor %}
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/AGEPRO target= "_blank"> AGEPRO </a>
+              <div class = "longTitle">Age Structured Projection Model</div>
+              <div class = "modelType">stock assessment model</div>
+              <div class = "modelType">age structured model</div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/PIFSCstockassessments/AGEPRO-GUI/releases/download/v4.3.1/AGEPRO-v4.3.1_Installer.msi';" value="download app" ></button>
+
+
+
+                 <button class = "icon_small"  id ="github" onclick="location.href='https://github.com/PIFSCstockassessments/AGEPRO-GUI';" value="Go to online app" ></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =external_active  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/AIM target= "_blank"> AIM </a>
+              <div class = "longTitle">An Index Method</div>
+              <div class = "modelType">stock assessment model</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/AIMV25.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/ASAP target= "_blank"> ASAP </a>
+              <div class = "longTitle">Age Structured Assessment Program</div>
+              <div class = "modelType">stock assessment model</div>
+              <div class = "modelType">age structured model</div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/ASAPV30.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/ASPIC target= "_blank"> ASPIC </a>
+              <div class = "longTitle">A Stock Production Model Incorporating Covariates</div>
+              <div class = "modelType">stock assessment model</div>
+              <div class = "modelType">surplus production model</div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/ASPIC534.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/CSA target= "_blank"> CSA </a>
+              <div class = "longTitle">Collie-Sissenwine Analysis</div>
+              <div class = "modelType">stock assessment model</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/CSAV43.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/DCAC target= "_blank"> DCAC </a>
+              <div class = "longTitle">Depletion-Corrected Average Catch</div>
+              <div class = "modelType">stock assessment model</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/DCACV211.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://seacode.github.io/gmacs/ target= "_blank"> GMACs </a>
+              <div class = "longTitle">General Model for Assessing Crustacean Stocks</div>
+              <div class = "modelType">stock assesment model</div>
+              <div class = "modelType">generalized model</div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="down" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="github" onclick="location.href='https://github.com/seacode/gmacs';" value="Go to online app" ></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =external_active  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/IRATE target= "_blank"> IRATE </a>
+              <div class = "longTitle">Instantaneous Rates</div>
+              <div class = "modelType">associated tool</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/IRATEV2.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/KALMAN target= "_blank"> KALMAN </a>
+              <div class = "longTitle">Kalman Filter</div>
+              <div class = "modelType">solver</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/KalmanFilterV2-3.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/MCOMP target= "_blank"> MCOMP </a>
+              <div class = "longTitle">Model Compare Utility</div>
+              <div class = "modelType">model comparison tool</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/MODELCOMPV43.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/MSE target= "_blank"> MSE </a>
+              <div class = "longTitle">Management Strategy Evaluation</div>
+              <div class = "modelType">model wrapper</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/MSEV40.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/POPSIM-A target= "_blank"> POPSIM-A </a>
+              <div class = "longTitle">Age Population Simulator</div>
+              <div class = "modelType">stock assessment model</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/AGEPOPSIMV82.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/POPSIM-L target= "_blank"> POPSIM-L </a>
+              <div class = "longTitle">Length Population Simulator</div>
+              <div class = "modelType">stock assessment model</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/LENGTHPOPSIMV80.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/POPSIM target= "_blank"> POPSIM </a>
+              <div class = "longTitle">Population Simulator</div>
+              <div class = "modelType">stock assessment model</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/POPSIMV75.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/PSA target= "_blank"> PSA </a>
+              <div class = "longTitle">Productivity and Susceptibility Analysis</div>
+              <div class = "modelType">meta-analysis tool</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/PSA-1-4.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/RMAS target= "_blank"> RMAS </a>
+              <div class = "longTitle">R interface to Metapopulation Assessment System</div>
+              <div class = "modelType">Input/Output Processor</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="down" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="github" onclick="location.href='https://github.com/nmfs-fish-tools/RMAS';" value="Go to online app" ></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_active  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/RIVARD target= "_blank"> RIVARD </a>
+              <div class = "longTitle">Rivard Calculator</div>
+              <div class = "modelType">associated tool</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/RivardCalcV2-0.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/SCALE target= "_blank"> SCALE </a>
+              <div class = "longTitle">Statistical Catch at Length Model</div>
+              <div class = "modelType">stock assessment model</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/SCALEV1.11.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/SEINE target= "_blank"> SEINE </a>
+              <div class = "longTitle">Survival Estimation in Non-Equilibrium situations</div>
+              <div class = "modelType">stock assessment model</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/SEINEV13.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/SRFIT target= "_blank"> SRFIT </a>
+              <div class = "longTitle">Stock Recruitment Fitting Model</div>
+              <div class = "modelType">associated tool</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/SRFITV70.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= ttps://vlab.ncep.noaa.gov/web/stock-synthesis target= "_blank"> SS </a>
+              <div class = "longTitle">Stock Synthesis</div>
+              <div class = "modelType">stock assesment model</div>
+              <div class = "modelType">age and size structured assessment model</div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://vlab.ncep.noaa.gov/web/stock-synthesis/document-library/';" value="download app" ></button>
+
+
+
+                 <button class = "icon_small"  id ="github" onclick="location.href='https://vlab.ncep.noaa.gov/web/stock-synthesis/document-library/';" value="Go to online app" ></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =external_active  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/STATCAM target= "_blank"> STATCAM </a>
+              <div class = "longTitle">Statistical Catch at Age Model</div>
+              <div class = "modelType"></div>
+              <div class = "modelType">stock assesment model</div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/statcam141.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/VPA target= "_blank"> VPA </a>
+              <div class = "longTitle">Virtual Population Analysis</div>
+              <div class = "modelType">stock assessment model</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/VPAV34.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/VRD target= "_blank"> VRD </a>
+              <div class = "longTitle">Visual Report Designer</div>
+              <div class = "modelType">reporting</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/VisualReportV161.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                  <button class = "icon_small" id ="checkmark" disabled></button>
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/YPR target= "_blank"> YPR </a>
+              <div class = "longTitle">Yield Per Recruit</div>
+              <div class = "modelType">associated tool</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/YPRV33.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
+          <div class = "box">
+
+
+
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/YPRLEN target= "_blank"> YPRLEN </a>
+              <div class = "longTitle">Length Based Yield Per Recruit</div>
+              <div class = "modelType">associated tool</div>
+              <div class = "modelType"></div>
+              <div class = "language"></div>
+              <div class = "iconrow">
+
+                 <button class = "icon_small" id ="online" disabled></button>
+
+
+
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://www.nefsc.noaa.gov/nft/downloads/YPRLENV21.zip';" value="download app" ></button>
+
+
+
+                  <button class = "icon_small" id ="github" disabled></button>
+
+
+               <!--   -->
+
+                <button class = "icon_small" id ="cert" disabled></button>
+
+
+
+                  <button class = "icon_small" id ="cert" disabled></button>
+                <!--  -->
+
+                 <button class = "icon_small"  id =internal_inactive  ></button>
+
+
+
+              </div>
+
+
+          </div>
+
 
 
         </div>
