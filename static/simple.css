@@ -239,7 +239,7 @@ button.icon_small[disabled]{
 }
 
 #github{
-  background-image: url("icons8-github-24.png");
+  background-image: url("icons8-code-fork-24.png");
   background-repeat: none;
   background-size: cover;
 }
@@ -257,11 +257,30 @@ button.icon_small[disabled]{
   background-repeat: none;
   background-size: cover;
 }
+
 #checkmark{
   background-image: url("icons8-checkmark-24.png");
   background-repeat: none;
   background-size: cover;
 }
+
+#internal_inactive{
+  background-image: url("icons8-checkmark-24-internal-inactive.png");
+  background-repeat: none;
+  background-size: cover;
+}
+#internal_active{
+  background-image: url("icons8-checkmark-24-internal-active.png");
+  background-repeat: none;
+  background-size: cover;
+}
+#external_active{
+  background-image: url("icons8-checkmark-24-external-active.png");
+  background-repeat: none;
+  background-size: cover;
+}
+
+
 .versionButton{
 
 width: 97px;
@@ -407,4 +426,10 @@ footer{
    padding-right:260px;
    font-family: Cambria,Georgia,serif;
 
+}
+.attribution{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+    color:grey;
 }
