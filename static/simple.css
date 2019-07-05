@@ -219,6 +219,7 @@ button:disabled,
 button:[disabled]{
 
   background-color: grey;
+  display: none;
 
 }
 
@@ -227,6 +228,7 @@ button.icon_small[disabled]{
 
   background-color: grey;
   clip-path: polygon(0 0, 0% 0, 0% 0%);
+  display: none;
 
 }
 
