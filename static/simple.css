@@ -1,17 +1,11 @@
 
 .boxInput{
-  width: 100vw;
-  height: 70px;
+  width: 200px;
   font-size: 20px;
   border: 1px solid #ddd;
-  margin-bottom: 12px;
   line-height: 24px;
   margin-left:40px;
-  margin-right:120px;
-  padding-right: 10px;
-  color: black;
-  display: flex;
-  flex-direction: column;
+
 
 }
 
