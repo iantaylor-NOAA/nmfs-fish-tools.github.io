@@ -1,16 +1,11 @@
 
 .boxInput{
-  width: 100vw;
-  height: 70px;
-  font-size: 20px;
+  width: 200px;
+  font-size: 18px;
   border: 1px solid #ddd;
-  margin-bottom: 12px;
-  margin-left:40px;
-  margin-right:120px;
-  padding-right: 10px;
+  margin-left: 40px;
   color: black;
   display: flex;
-  flex-direction: column;
 
 }
 
@@ -132,12 +127,11 @@ border-radius: 100%;
 }
 
 .icon{
-    width: 30px;
-height: 30px;
-font-size: 24px;
-font-weight: normal;
-border: none;
-
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  font-weight: normal;
+  border: none;
 
 }
 
@@ -145,10 +139,10 @@ border: none;
 .boxcontainer{
   padding: 40px 40px 0 40px;
   display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+
 .box2,
 .box{
   width: 200px;
@@ -170,6 +164,7 @@ border: none;
    font-size:14px;
    border:none;
    border-top: 1px solid black;
+   margin-bottom:10px;
 }
 
 h2{

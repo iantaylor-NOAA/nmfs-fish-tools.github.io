@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!DOCTYPE html>
+<html>
+<head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146635872-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146635872-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-146635872-2');
-</script>
-
-    <title>NMFS Fish and Fisheries Tools</title>
+    gtag('config',"UA-146635872-2" );
+  </script>
+    <title>NMFS Fisheries Tools</title>
    <link type="text/css" rel="stylesheet" href="./static/simple.css" />
 
 
@@ -25,11 +27,9 @@
         </div>
         <div class = "divider"></div>
         <div class ="infoText">
-          The NOAA Fish and Fisheries Toolbox (Fish-Tools) is a collection of software programs and modeling tools which can be used in fishery stock assessments. Many of the models are used in peer-reviewed stock assessments in the U.S. and globally. A variety of fisheries stock assessment models as well as analytical and reporting tools are available, each of which uses a different type of estimation method to produce results. The NOAA Fish and Fisheries Toolbox (Fish-Tools) is part of the <a class ='mylink' href ='https://noaa-fisheries-integrated-toolbox.github.io/'>NOAA Fisheries Integrate Toolbox (FIT)</a> and is an expansion and update to the NOAA Fisheries Toolbox (NFT).
+          The NOAA Fish and Fisheries Toolbox (Fish-Tools) is a collection of software programs and modeling tools which can be used in fishery stock assessments. Many of the models are used in peer-reviewed stock assessments in the U.S. and globally. A variety of fisheries stock assessment models as well as analytical and reporting tools are available, each of which uses a different type of estimation method to produce results. The NOAA Fish and Fisheries Toolbox (Fish-Tools) is part of the <a class ='mylink' href ='https://noaa-fisheries-integrated-toolbox.github.io/'>NOAA Fisheries Integrate Toolbox (FIT)</a> and is an expansion and update to the NOAA Fisheries Toolbox (NFT)
         </div>
-
         <div class="boxcontainer">
-
             <div class = "box2">
               <div class ="row"><img id="online" height="25px" width="25px"><h2>Web Application</h2></div>
                 Some tools are available as web based applications.
@@ -54,14 +54,14 @@
             </div>
             <div class = "box2">
               <div class ="row"><img id="cert" height="25px" width="25px"> <h2>Validation</h2></div>
-                  Tools and code go through a validation process and are assigned different levels of validation.
+                  Tools and code go through a validation process and areassigned different levels of validation.
 
 
 
             </div>
             <div class = "box2">
               <div class ="row"><img id="checkmark" height="25px" width="25px"> <h2>Support Level</h2></div>
-                  Tools are supported by NOAA support staff at differing levels depending on the owner of the repository and tools validation level
+                  Tools are supported by NOAA support staff at differeing levels depending on the owner of the repository and tools validation level
 
 
             </div>
@@ -70,7 +70,7 @@
 
 
             </div>
-            <div class ="boxcontainer">
+        <div class ="boxcontainer">
 
           <input class = "boxInput" type="text" id="myInput" onkeyup="simpleSearch()" placeholder="Search for models" title="Type in a name">
         </div>
@@ -84,7 +84,7 @@
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/2BOX target= "_blank"> 2BOX </a>
               <div class = "longTitle">Dual Zone Virtual Population Analysis</div>
               <div class = "modelType">Stock Assesment Model</div>
-              <div class = "modelType"></div>
+              <div class = "modelType">Age structured model</div>
               <div class = "language"></div>
               <div class = "iconrow">
 
@@ -132,7 +132,7 @@
 
 
 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/PIFSCstockassessments/AGEPRO-GUI/releases/download/v4.3.1/AGEPRO-v4.3.1_Installer.msi';" value="download app" ></button>
+                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/PIFSCstockassessments/AGEPRO-GUI/releases/tag/v4.3.2';" value="download app" ></button>
 
 
 
@@ -363,8 +363,8 @@
 
               <a class = "shortTitle" href= https://seacode.github.io/gmacs/ target= "_blank"> GMACs </a>
               <div class = "longTitle">General Model for Assessing Crustacean Stocks</div>
-              <div class = "modelType">Stock Assesment Model</div>
-              <div class = "modelType">Generalized Model</div>
+              <div class = "modelType">Stock Assessment Model</div>
+              <div class = "modelType">Length structured model</div>
               <div class = "language"></div>
               <div class = "iconrow">
 
@@ -603,7 +603,7 @@
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/POPSIM-A target= "_blank"> POPSIM-A </a>
               <div class = "longTitle">Age Population Simulator</div>
-              <div class = "modelType"></div>
+              <div class = "modelType">Data Simulator</div>
               <div class = "modelType"></div>
               <div class = "language"></div>
               <div class = "iconrow">
@@ -643,7 +643,7 @@
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/POPSIM-L target= "_blank"> POPSIM-L </a>
               <div class = "longTitle">Length Population Simulator</div>
-              <div class = "modelType">Stock Assessment Model</div>
+              <div class = "modelType">Data Simulator</div>
               <div class = "modelType"></div>
               <div class = "language"></div>
               <div class = "iconrow">
@@ -683,7 +683,7 @@
 
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/POPSIM target= "_blank"> POPSIM </a>
               <div class = "longTitle">Population Simulator</div>
-              <div class = "modelType">Stock Assessment Model</div>
+              <div class = "modelType">Data Simulator</div>
               <div class = "modelType"></div>
               <div class = "language"></div>
               <div class = "iconrow">
@@ -1041,7 +1041,7 @@
 
 
 
-              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/VPA target= "_blank"> VPA </a>
+              <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/VPA/ADAPT target= "_blank"> VPA/ADAPT </a>
               <div class = "longTitle">Virtual Population Analysis</div>
               <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType"></div>
@@ -1215,26 +1215,7 @@
          </div>
 
         </footer>
-        <div class ="attribution">Icons by icons8 https:/s/icons8.com/</div>
+        <div class ="attribution">Icons by icons8 https://icons8.com/</div>
       </div>
-      <script>
-      function simpleSearch() {
-          var input, filter, ul, box, box_each, box_each_abbrev, i, txtValue;
-          input = document.getElementById("myInput");
-          filter = input.value.toUpperCase();
-          box = document.getElementsByClassName("box");
-          for (i = 0; i < box.length; i++) {
-              box_each = box[i].getElementsByClassName("longTitle")[0];
-              box_each_abbrev = box[i].getElementsByClassName("shortTitle")[0];
-              txtValue = box_each.textContent + " " + box_each_abbrev.innerText;
-              if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                  box[i].style.display = "";
-              } else {
-                  box[i].style.display = "none";
-              }
-          }
-      }
-</script>
-
    </body>
 </html>
