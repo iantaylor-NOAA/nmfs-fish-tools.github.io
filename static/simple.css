@@ -404,8 +404,12 @@ li {
 
 .modelType{
   font-size: 14px;
-    padding-right: 5px;
+  padding-right: 5px;
   padding-left: 5px;
+}
+.release{
+  margin-top: auto;
+  padding: 5px 5px 0px 5px;
 }
 
 .icon_small_grey{
