@@ -13,7 +13,7 @@
 
     gtag('config',"UA-146635872-2" );
   </script>
-    <title>NMFS Fisheries Tools</title>
+    <title>NMFS Fish and Fisheries Tools</title>
    <link type="text/css" rel="stylesheet" href="./static/simple.css" />
 
 
@@ -29,14 +29,44 @@
         <div class ="infoText">
           The NOAA Fish and Fisheries Toolbox (Fish-Tools) is a collection of software programs and modeling tools which can be used in fishery stock assessments. Many of the models are used in peer-reviewed stock assessments in the U.S. and globally. A variety of fisheries stock assessment models as well as analytical and reporting tools are available, each of which uses a different type of estimation method to produce results. The NOAA Fish and Fisheries Toolbox (Fish-Tools) is part of the <a class ='mylink' href ='https://noaa-fisheries-integrated-toolbox.github.io/'>NOAA Fisheries Integrated Toolbox (FIT)</a> and is an expansion and update to the NOAA Fisheries Toolbox (NFT)
         </div>
-        <div class="boxcontainer">
-            <div class = "box2">
+
+        <div class="mywrap">
+          <div class="mywrap">
+          <div class ="sidenav">
+
+           <!--  <div class="tabs">
+              <div class="tab">
+                <input type="checkbox" id="chck1">
+                <label class="tab-label" for="chck1">Stock Assesment Models</label>
+                <div class="tab-content">
+                 <input type="button" value="Age structured" onclick="simpleSearch(this.value)">
+                 <input type="button" value="Length structured" onclick="simpleSearch(this.value)">
+                 <input type="button" value="Age length structured" onclick="simpleSearch(this.value)">
+                </div>
+              </div>
+              <div class="tab">
+              <input type="button" value="Advanced estimation engine" onclick="simpleSearch(this.value)">
+            </div>
+              <div class="tab">
+              <input type="button" value="Data simulator" onclick="simpleSearch(this.value)">
+            </div>
+              <div class="tab">
+              <input type="button" value="Input Processor" onclick="simpleSearch(this.value)">
+            </div>
+            </div> -->
+
+
+          <div class = "box2">
+            <input class = "boxInput" type="text" id="myInput" onkeyup="simpleSearch()" placeholder="Search for models" title="Type in a name">
+          </div>
+
+          <div class = "box2">
               <div class ="row"><img id="online" height="25px" width="25px"><h2>Web Application</h2></div>
                 Some tools are available as web based applications.
 
 
 
-              </div>
+            </div>
             <div class = "box2">
               <div class ="row"><img id="down" height="25px" width="25px"><h2> Executable</h2></div>
 
@@ -67,13 +97,17 @@
             </div>
 
 
+          </div>
+          <div class="side_container" onclick="menuClick(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
 
 
-            </div>
-        <div class ="boxcontainer">
+          </div>
 
-          <input class = "boxInput" type="text" id="myInput" onkeyup="simpleSearch()" placeholder="Search for models" title="Type in a name">
-        </div>
+
+
         <div class ="boxcontainer">
 
           
@@ -84,7 +118,7 @@
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/2BOX target= "_blank"> 2BOX </a>
               <div class = "longTitle">Dual Zone Virtual Population Analysis</div>
               <div class = "modelType">Stock Assesment Model</div>
-              <div class = "modelType">Age structured model</div>
+              <div class = "modelType">Age-structured model</div>
               
               
               <div class = "release"><img alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-fish-tools/2BOX?color=%230093D0></div>
@@ -129,7 +163,7 @@
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/AGEPRO target= "_blank"> AGEPRO </a>
               <div class = "longTitle">Age Structured Projection Model</div>
               <div class = "modelType">Stock Assessment Model</div>
-              <div class = "modelType">Age Structured Model</div>
+              <div class = "modelType">Age-structured model</div>
               
               
               <div class = "release"><img alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/PIFSCstockassessments/AGEPRO-GUI?color=%230093D0></div>
@@ -219,7 +253,7 @@
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/ASAP target= "_blank"> ASAP </a>
               <div class = "longTitle">Age Structured Assessment Program</div>
               <div class = "modelType">Stock Assessment Model</div>
-              <div class = "modelType">Age Structured Model</div>
+              <div class = "modelType">Age-structured model</div>
               
               
               <div class = "release"><img alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-fish-tools/ASAP?color=%230093D0></div>
@@ -264,7 +298,7 @@
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/ASPIC target= "_blank"> ASPIC </a>
               <div class = "longTitle">A Stock Production Model Incorporating Covariates</div>
               <div class = "modelType">Stock Assessment Model</div>
-              <div class = "modelType">surplus production model</div>
+              <div class = "modelType">Surplus production model</div>
               
               
               <div class = "release"><img alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-fish-tools/ASPIC?color=%230093D0></div>
@@ -399,7 +433,7 @@
               <a class = "shortTitle" href= https://seacode.github.io/gmacs/ target= "_blank"> GMACs </a>
               <div class = "longTitle">General Model for Assessing Crustacean Stocks</div>
               <div class = "modelType">Stock Assessment Model</div>
-              <div class = "modelType">Length structured model</div>
+              <div class = "modelType">Length-structured model</div>
               
 
               <div class = "language"></div>
@@ -1107,7 +1141,7 @@
               <a class = "shortTitle" href= https://nmfs-fish-tools.github.io/STATCAM target= "_blank"> STATCAM </a>
               <div class = "longTitle">Statistical Catch at Age Model</div>
               <div class = "modelType">Stock Assesment Model</div>
-              <div class = "modelType">Age Structured Model</div>
+              <div class = "modelType">Age-structured model</div>
               
               
               <div class = "release"><img alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-fish-tools/STATCAM?color=%230093D0></div>
@@ -1324,9 +1358,11 @@
 
           </div>
           
+        </div>
 
 
         </div>
+      </div>
 
 
 
@@ -1346,10 +1382,21 @@
         <div class ="attribution">Icons by icons8 https://icons8.com/</div>
       </div>
       <script>
-        function simpleSearch() {
+        var sidenav = document.getElementsByClassName("sidenav");
+            // sidenav[0].style.display="none";
+
+        function simpleSearch(val) {
+          console.log(val)
             var input, filter, ul, box, box_each, box_each_abbrev, i, txtValue;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
+            if(val === undefined){
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+            }
+            else {
+              filter = val.toUpperCase();
+            }
+
+
             box = document.getElementsByClassName("box");
             for (i = 0; i < box.length; i++) {
                 box_each = box[i].getElementsByClassName("longTitle")[0];
@@ -1362,6 +1409,18 @@
                 }
             }
         }
+
+        function menuClick(x) {
+          x.classList.toggle("change");
+
+          sidenav[0].classList.toggle("open");
+          // boxcontainer
+
+
+
+        }
+
+
       </script>
    </body>
 </html>
