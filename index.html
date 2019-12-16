@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146635872-2"></script>
@@ -16,14 +13,12 @@
     <title>NMFS Fish and Fisheries Tools</title>
    <link type="text/css" rel="stylesheet" href="./static/simple.css" />
 
-
-</style>
 </head>
 <body>
-    <div class="container">
+    <main role="main" class="container">
         <div class="mywrap">
-            <div class ="title"> Fish and Fisheries Tools</div>
-            <div ><a  class ="fit_link" href ='https://noaa-fisheries-integrated-toolbox.github.io'>NOAA Fisheries Integrated Toolbox</a> <button class = "icon_small"  id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"' value="e-mail fisheries.toolbox@noaa.gov" alt="email: fisheries.toolbox@noaa.gov" ></button></div>
+            <h1 class ="title"> Fish and Fisheries Tools</h1>
+            <address><a  class ="fit_link" href ='https://noaa-fisheries-integrated-toolbox.github.io'>NOAA Fisheries Integrated Toolbox</a> <button class = "icon_small"  id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"' value="e-mail fisheries.toolbox@noaa.gov" alt="email: fisheries.toolbox@noaa.gov" ></button></address>
         </div>
         <div class = "divider"></div>
         <div class ="infoText">
@@ -32,7 +27,14 @@
 
         <div class="mywrap">
           <div class="mywrap">
-          <div class ="sidenav">
+            <nav class ="sidenav" role="navigation">
+              <button class="menu-toggle" id=”menu-toggle” onclick="menuClick(this)"  aria-label=”toggle the menu” aria-expanded="false" aria-controls="menu">
+                  <div class="bar1" aria-hidden=”true”></div>
+                  <div class="bar2" aria-hidden=”true”></div>
+                  <div class="bar3" aria-hidden=”true”></div>
+              </button>
+
+
 
            <!--  <div class="tabs">
               <div class="tab">
@@ -54,57 +56,37 @@
               <input type="button" value="Input Processor" onclick="simpleSearch(this.value)">
             </div>
             </div> -->
+            <div id = "menu" tabindex="-1">
 
+              <div class = "box2">
+                <input class = "boxInput" type="text" id="myInput" onkeyup="simpleSearch()" placeholder="Search for models" title="Type in a name">
+              </div>
 
-          <div class = "box2">
-            <input class = "boxInput" type="text" id="myInput" onkeyup="simpleSearch()" placeholder="Search for models" title="Type in a name">
-          </div>
+              <div class = "box2">
+                  <div class ="row"><img class="icon_small online"><h2>Web Application</h2></div>
+                    Some tools are available as web based applications.
+                </div>
+                <div class = "box2">
+                  <div class ="row"><img class="icon_small down" ><h2> Executable</h2></div>
 
-          <div class = "box2">
-              <div class ="row"><img id="online" height="25px" width="25px"><h2>Web Application</h2></div>
-                Some tools are available as web based applications.
+                      Tools packaged as executables are available for download.
+                </div>
+                <div class = "box2">
+                  <div class ="row"><img class="icon_small github"><h2> Code Repository</h2></div>
 
+                      Code repositories associated to the tool are available for developers or users to access. Interested devleopers can make pull requests on the code base.
+                </div>
+                <div class = "box2">
+                  <div class ="row"><img class="icon_small cert"> <h2>Validation</h2></div>
+                      Tools and code go through a validation process and are assigned different levels of validation.
 
-
-            </div>
-            <div class = "box2">
-              <div class ="row"><img id="down" height="25px" width="25px"><h2> Executable</h2></div>
-
-                  Tools packaged as executables are available for download.
-
-
-            </div>
-            <div class = "box2">
-              <div class ="row"><img id="github" height="25px" width="25px"><h2> Code Repository</h2></div>
-
-                  Code repositories associated to the tool are available for developers or users to access. Interested devleopers can make pull requests on the code base.
-
-
-
-            </div>
-            <div class = "box2">
-              <div class ="row"><img id="cert" height="25px" width="25px"> <h2>Validation</h2></div>
-                  Tools and code go through a validation process and are assigned different levels of validation.
-
-
-
-            </div>
-            <div class = "box2">
-              <div class ="row"><img id="checkmark" height="25px" width="25px"> <h2>Support Level</h2></div>
-                  Tools are supported by NOAA support staff at differing levels depending on the owner of the repository and tools validation level.
-
-
-            </div>
-
-
-          </div>
-          <div class="side_container" onclick="menuClick(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-
-
-          </div>
+                </div>
+                <div class = "box2">
+                  <div class ="row"><img class="icon_small checkmark" > <h2>Support Level</h2></div>
+                      Tools are supported by NOAA support staff at differing levels depending on the owner of the repository and tools validation level.
+                </div>
+                </div>
+          </nav>
 
 
 
@@ -127,24 +109,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/2BOX/releases/download/3.05/2BOX305.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/2BOX/releases/download/3.05/2BOX305.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -172,24 +154,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/PIFSCstockassessments/AGEPRO-GUI/releases/tag/v4.3.2';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/PIFSCstockassessments/AGEPRO-GUI/releases/tag/v4.3.2';" value="download app" ></button>
                  
 
                 
-                 <button class = "icon_small"  id ="github" onclick="location.href='https://github.com/PIFSCstockassessments/AGEPRO-GUI';" value="Go to online app" ></button>
+                 <button class = "icon_small github" onclick="location.href='https://github.com/PIFSCstockassessments/AGEPRO-GUI';" value="Go to online app" ></button>
                  
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =external_active  ></button>
@@ -217,24 +199,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/AIM/releases/download/2.5/AIMV25.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/AIM/releases/download/2.5/AIMV25.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -262,24 +244,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/ASAP/releases/download/3.0.16/ASAPV30.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/ASAP/releases/download/3.0.16/ASAPV30.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -307,24 +289,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/ASPIC/releases/download/5.34.6/ASPIC534.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/ASPIC/releases/download/5.34.6/ASPIC534.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -352,24 +334,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/CSA/releases/download/4.3/CSAV43.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/CSA/releases/download/4.3/CSAV43.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -397,24 +379,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/DCAC/releases/download/2.1.1/DCACV211.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/DCAC/releases/download/2.1.1/DCACV211.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -439,24 +421,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                  <button class = "icon_small" id ="down" disabled></button>
+                  <button class = "icon_small down" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="github" onclick="location.href='https://github.com/seacode/gmacs';" value="Go to online app" ></button>
+                 <button class = "icon_small github" onclick="location.href='https://github.com/seacode/gmacs';" value="Go to online app" ></button>
                  
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =external_active  ></button>
@@ -484,24 +466,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/IRATE/releases/download/2.0.0/IRATEV2.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/IRATE/releases/download/2.0.0/IRATEV2.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -529,24 +511,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/KALMAN/releases/download/2.3/KalmanFilterV2-3.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/KALMAN/releases/download/2.3/KalmanFilterV2-3.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -571,24 +553,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                  <button class = "icon_small" id ="down" disabled></button>
+                  <button class = "icon_small down" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="github" onclick="location.href='https://vlab.ncep.noaa.gov/redmine/projects/mas';" value="Go to online app" ></button>
+                 <button class = "icon_small github" onclick="location.href='https://vlab.ncep.noaa.gov/redmine/projects/mas';" value="Go to online app" ></button>
                  
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_active  ></button>
@@ -616,24 +598,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/MCOMP/releases/download/4.3.0/MODELCOMPV43.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/MCOMP/releases/download/4.3.0/MODELCOMPV43.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -661,24 +643,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/MSE/releases/download/3.4.3/MSEV40.1.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/MSE/releases/download/3.4.3/MSEV40.1.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -706,24 +688,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/POPSIM-A/releases/download/8.2.0/AGEPOPSIMV82.1.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/POPSIM-A/releases/download/8.2.0/AGEPOPSIMV82.1.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -751,24 +733,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/POPSIM-L/releases/download/8.0.0/LENGTHPOPSIMV80.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/POPSIM-L/releases/download/8.0.0/LENGTHPOPSIMV80.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -796,24 +778,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/POPSIM/releases/download/7.5.0/POPSIMV75.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/POPSIM/releases/download/7.5.0/POPSIMV75.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -841,24 +823,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/PSA/releases/download/1.4.0/PSA-1-4.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/PSA/releases/download/1.4.0/PSA-1-4.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -883,24 +865,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                  <button class = "icon_small" id ="down" disabled></button>
+                  <button class = "icon_small down" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="github" onclick="location.href='https://github.com/nmfs-fish-tools/RMAS';" value="Go to online app" ></button>
+                 <button class = "icon_small github" onclick="location.href='https://github.com/nmfs-fish-tools/RMAS';" value="Go to online app" ></button>
                  
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_active  ></button>
@@ -928,24 +910,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/RIVARD/releases/download/2.0.0/RivardCalcV2-0.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/RIVARD/releases/download/2.0.0/RivardCalcV2-0.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -973,24 +955,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/SCALE/releases/download/1.0.11/SCALEV1.11.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/SCALE/releases/download/1.0.11/SCALEV1.11.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -1018,24 +1000,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/SEINE/releases/download/1.3.0/SEINEV13.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/SEINE/releases/download/1.3.0/SEINEV13.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -1063,24 +1045,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/SRFIT/releases/download/7.0.1/SRFITV70.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/SRFIT/releases/download/7.0.1/SRFITV70.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -1105,24 +1087,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://vlab.ncep.noaa.gov/web/stock-synthesis/document-library/';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://vlab.ncep.noaa.gov/web/stock-synthesis/document-library/';" value="download app" ></button>
                  
 
                 
-                 <button class = "icon_small"  id ="github" onclick="location.href='https://vlab.ncep.noaa.gov/web/stock-synthesis/document-library/';" value="Go to online app" ></button>
+                 <button class = "icon_small github" onclick="location.href='https://vlab.ncep.noaa.gov/web/stock-synthesis/document-library/';" value="Go to online app" ></button>
                  
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =external_active  ></button>
@@ -1150,24 +1132,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/STATCAM/releases/download/1.4.1/statcam141.1.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/STATCAM/releases/download/1.4.1/statcam141.1.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -1195,24 +1177,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/VPA/releases/download/3.4.4/VPAV34.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/VPA/releases/download/3.4.4/VPAV34.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -1240,27 +1222,27 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/VRD/releases/download/1.6.1/VisualReportV161.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/VRD/releases/download/1.6.1/VisualReportV161.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
-                  <button class = "icon_small" id ="checkmark" disabled></button>
+                  <button class = "icon_small checkmark" disabled></button>
                 
 
               </div>
@@ -1284,24 +1266,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/YPR/releases/download/3.3.0/YPRV33.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/YPR/releases/download/3.3.0/YPRV33.zip';" value="download app" ></button>
                  
 
                 
-                 <button class = "icon_small"  id ="github" onclick="location.href='https://github.com/nmfs-fish-tools/YPR.git';" value="Go to online app" ></button>
+                 <button class = "icon_small github" onclick="location.href='https://github.com/nmfs-fish-tools/YPR.git';" value="Go to online app" ></button>
                  
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -1329,24 +1311,24 @@
               <div class = "language"></div>
               <div class = "iconrow">
                 
-                 <button class = "icon_small" id ="online" disabled></button>
+                 <button class = "icon_small online" disabled></button>
                 
 
                 
-                 <button class = "icon_small"  id ="down" onclick="location.href='https://github.com/nmfs-fish-tools/YPRLEN/releases/download/2.1.0/YPRLENV21.zip';" value="download app" ></button>
+                 <button class = "icon_small down" onclick="location.href='https://github.com/nmfs-fish-tools/YPRLEN/releases/download/2.1.0/YPRLENV21.zip';" value="download app" ></button>
                  
 
                 
-                  <button class = "icon_small" id ="github" disabled></button>
+                  <button class = "icon_small github" disabled></button>
                 
 
                <!--   -->
                   
-                <button class = "icon_small" id ="cert" disabled></button>
+                <button class = "icon_small cert" disabled></button>
 
                 
 
-                  <button class = "icon_small" id ="cert" disabled></button>
+                  <button class = "icon_small cert" disabled></button>
                 <!--  -->
                 
                  <button class = "icon_small"  id =internal_inactive  ></button>
@@ -1371,22 +1353,24 @@
        <div class = "divider"></div>
 
         <footer >
-             <img src="./static/noaa-fisheries-rgb-2line-horizontal-small.png" height="75px">
+             <img src="./static/noaa-fisheries-rgb-2line-horizontal-small.png" alt="NOAA Fisheries Logo" height="75" >
          <div class="mywrap_center">
-          <a class ="mylink" id = "line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
-         <a class ="mylink" id = "line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+          <a class ="mylink line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+         <a class ="mylink line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
          <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
          </div>
 
         </footer>
         <div class ="attribution">Icons by icons8 https://icons8.com/</div>
-      </div>
+      </main>
       <script>
         var sidenav = document.getElementsByClassName("sidenav");
+        var menu = document.getElementById("menu");
+
+
             // sidenav[0].style.display="none";
 
         function simpleSearch(val) {
-          console.log(val)
             var input, filter, ul, box, box_each, box_each_abbrev, i, txtValue;
             if(val === undefined){
               input = document.getElementById("myInput");
@@ -1412,13 +1396,26 @@
 
         function menuClick(x) {
           x.classList.toggle("change");
-
           sidenav[0].classList.toggle("open");
+          menu.classList.toggle("is_active");
+          let y =x.getAttribute("aria-expanded");
+          let t;
+          if (y == "true"){
+            y = "false"
+            t="-1";
+          }
+          else {
+            y = "true";
+            t="0";
+          }
+          x.setAttribute("aria-expanded", x);
+
+           }
           // boxcontainer
 
 
 
-        }
+
 
 
       </script>
