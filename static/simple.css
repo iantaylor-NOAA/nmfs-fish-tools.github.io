@@ -5,6 +5,18 @@
   z-index: 1;
   border:none;
   background-color:transparent;
+  width: 35px;
+  height: 35px;
+
+}
+
+.menulabel{
+
+  border:none;
+  background-color:transparent;
+  width: 35px;
+  height: 35px;
+    position: absolute;
 
 }
 
@@ -23,10 +35,11 @@
   background-color: #0055A4;
   margin: 6px 0;
   transition: 0.6s;
+
 }
 
 /* Rotate first bar */
-.change .bar1 {
+.menulabel.change .bar1 {
   -webkit-transform: rotate(90deg) translate(14px, 16px) ;
   transform: rotate(90deg) translate(14px, 16px) ;
   background-color:white;
@@ -445,17 +458,17 @@ button.icon_small[disabled]{
   background-image: url("icons8-checkmark-24.png");
 }
 
-#internal_inactive{
+.internal_inactive{
   background-image: url("icons8-checkmark-24-internal-inactive.png");
   background-repeat: none;
   background-size: cover;
 }
-#internal_active{
+.internal_active{
   background-image: url("icons8-checkmark-24-internal-active.png");
   background-repeat: none;
   background-size: cover;
 }
-#external_active{
+.external_active{
   background-image: url("icons8-checkmark-24-external-active.png");
   background-repeat: none;
   background-size: cover;
