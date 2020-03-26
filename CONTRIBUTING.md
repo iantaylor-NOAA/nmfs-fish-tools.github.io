@@ -12,13 +12,8 @@ The following is a set of guidelines for contributing to tools hosted on the NOA
   * [Your First Code Contribution](#your-first-code-contribution)
   * [Pull Requests](#pull-requests)
 
-[Styleguides](#styleguides)
-  * [Git Commit Messages](#git-commit-messages)
-  * [R Styleguide](#javascript-styleguide)
-  * [Documentation Styleguide](#documentation-styleguide)
-
 [Additional Notes](#additional-notes)
-  * [Issue and Pull Request Labels](#issue-and-pull-request-labels)
+  * [Issue Labels](#issue-labels)
 
 ## Code of Conduct
 
