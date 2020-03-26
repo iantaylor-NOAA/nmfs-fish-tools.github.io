@@ -1,6 +1,6 @@
 # Contributing to R tools in the NOAA Fisheries Toolbox
 
-The following is a set of guidelines for contributing to tools hosted on the NOAA Fisheries Toolbox, which are hosted in the [NMFS Fish Tools Organization](https://github.com/nmfs-fish-tools) on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+The following is a set of guidelines for contributing to tools hosted on the NOAA Fisheries Toolbox, which are hosted in the [NMFS Fish Tools Organization](https://github.com/nmfs-fish-tools) on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request. Heavily influenced by Atom's [CONTRIBUTING.md](https://github.com/atom/atom/blob/master/CONTRIBUTING.md).
 
 #### Table Of Contents
 
@@ -17,7 +17,7 @@ The following is a set of guidelines for contributing to tools hosted on the NOA
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [NOAA Fisheries Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [nmfs-toolbox](mailto:nmfs-toolbox@noaa.gov).
+This project and everyone participating in it is governed by the [NOAA Fisheries Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [nmfs-toolbox@noaa.gov](mailto:nmfs-toolbox@noaa.gov).
 
 ## I don't want to read this whole thing I just have a question!!!
 
@@ -37,7 +37,7 @@ Before creating bug reports, please check the issue list for the repository you 
 
 #### Before Submitting A Bug Report
 
-* **Check if it is related to version. We recommend using `sessionInfo()` and submitting the results in your bug report. Also, please check your R version against the required R version in the DESCRIPTION file and update if needed to see if that fixes the issue.
+* **Check if it is related to version.** We recommend using `sessionInfo()` and submitting the results in your bug report. Also, please check your R version against the required R version in the DESCRIPTION file and update if needed to see if that fixes the issue.
 * **Perform a cursory search of issues** to see if the problem has already been reported. If it has **and the issue is still open**, add a comment to the existing issue instead of opening a new one.
 
 #### How Do I Submit A (Good) Bug Report?
